@@ -11,11 +11,11 @@ public class CashRegister {
 		double price = keyboard.nextDouble();
 		System.out.println("Price: " + price);
 		
-		System.out.println("How much money tendered: ");
+		System.out.print("How much money tendered: ");
 		double money = keyboard.nextDouble();
 		
 		while(money < price) {
-			System.out.println("Money is not enough, please provide more: ");
+			System.out.print("Money is not enough, please provide more: ");
 			money += keyboard.nextDouble();
 			
 		}
@@ -25,7 +25,7 @@ public class CashRegister {
 		}
 		else if (money > price){
 		float AmountChange = (float) (money - price);
-		System.out.println(AmountChange);
+		System.out.println("Change amount: " + AmountChange);
 		
 		int bill_20 = 0;
 		int bill_10 = 0;
